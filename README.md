@@ -1,47 +1,51 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# WeKlem Web YouTube Player
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+This Flutter web package allows you to easily embed YouTube videos.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Embed YouTube videos directly using the share link.
+- Responsive design that works on both web and mobile browsers.
+- Extensive playback controls and customizations.
 
-## Getting started
+## Getting Started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+### Prerequisites
+- Flutter 2.x
+- Dart 2.x
 
-## Usage
+### Installation
+Add the following dependency in your `pubspec.yaml`:
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+```yaml
+dependencies:
+  weklem_web_youtube_player: ^1.0.0
+Then run:
 
-```dart
-const like = 'sample';
-```
+arduino
+Copy code
+flutter pub get
+Usage
+To embed a YouTube video, simply use the YouTubePlayerWidget:
 
-## Additional information
+dart
+Copy code
+YouTubePlayerWidget(
+  youtubeLink: 'YOUR_YOUTUBE_SHARE_LINK',
+  width: 480,
+  height: 259,
+  eScrollMode: EScrollMode.SCROLL,
+  scrollController: SC,
+)
+Replace YOUR_YOUTUBE_SHARE_LINK with the actual share link you get from YouTube.
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Additional Information
+For further details or any queries, please reach out through the issues section of this package's repository.
 
+License
+MIT License
 
-## MIT License
-
-Copyright (c) [current year] WeKlem Inc.
+Copyright (c) 2023 WeKlem Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
